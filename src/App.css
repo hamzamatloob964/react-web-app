@@ -195,3 +195,36 @@
       border-radius: 5px;
       background-color: brown;
   }
+  .req-quote{
+    /* position: absolute;
+    right: 0px;
+    top: -35px; */
+    margin-top: 5px;
+  }
+  @media (min-width: 768px) {
+    .req-quote {
+      position: absolute;
+      right: 0px;
+      top: -35px; } }
+
+  .contact-number{
+    width: 204px;
+  }
+  @media (min-width: 768px) {
+    .contact-number {
+      width: 194px; } }
+  /* .container {
+    width: 100%;
+    }
+    @media (min-width: 576px) {
+      .container {
+        max-width: 540px; } }
+    @media (min-width: 768px) {
+      .container {
+        max-width: 720px; } }
+    @media (min-width: 992px) {
+      .container {
+        max-width: 960px; } }
+    @media (min-width: 1200px) {
+      .container {
+        max-width: 1140px; } } */
