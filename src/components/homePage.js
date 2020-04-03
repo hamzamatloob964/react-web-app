@@ -6,8 +6,8 @@ import { Carousel } from 'react-responsive-carousel';
 export default function HomePage () {
 
   return (
-    <div style={{height:'400px'}} className="w-full bg-gray-600">
-      {/* <Carousel>
+    <div style={{height:'350px'}} className="w-full mt-2 bg-gray-600">
+      <Carousel>
         <div>
               <img src={require('../../src/assets/images/pic1.png')} />
               <p className="legend">Legend 1</p>
@@ -20,7 +20,7 @@ export default function HomePage () {
               <img src={require('../../src/assets/images/pic3.png')} />
               <p className="legend">Legend 3</p>
           </div>
-      </Carousel> */}
+      </Carousel>
     </div>      
   )
 }

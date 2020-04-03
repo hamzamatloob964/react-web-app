@@ -1,5 +1,7 @@
 import React from 'react'
-import '../App.css'
+// import '../App.css'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 export default function Services () {
   return (
@@ -8,7 +10,22 @@ export default function Services () {
 
         <div  className="w-full bg-gray-400 flex flex-col items-center">
           <span className="md:text-5xl text-4xl md:mt-10 mt-5">OUR SERVICES</span>
-          <div className="h-48 w-11/12 bg-gray-600">slider</div>
+          <div className="h-48 w-11/12 bg-gray-600">slider
+            {/* <Carousel>
+              <div>
+                <img src={require('../../src/assets/images/pic1.png')} />
+                <p className="legend">Legend 1</p>
+              </div>
+              <div>
+                <img src={require('../../src/assets/images/pic2.png')} />
+                <p className="legend">Legend 2</p>
+                </div>
+                <div>
+                  <img src={require('../../src/assets/images/pic3.png')} />
+                  <p className="legend">Legend 3</p>
+                </div>
+            </Carousel> */}
+          </div>
         </div>
 
         <div className="relative w-10/12 bg-white flex md:flex-row flex-col">

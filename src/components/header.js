@@ -1,4 +1,8 @@
 import React from 'react';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import PinterestIcon from '@material-ui/icons/Pinterest';
+import AddIcCallIcon from '@material-ui/icons/AddIcCall';
 
 export default function Header() {
   return (
@@ -6,11 +10,11 @@ export default function Header() {
       <div className="md:h-12 h-20 flex flex-col md:flex-row bg-gray-300">
         <span className="md:ml-20 xs:ml-10 md:text-sm xs:text-xs md:mt-3 mt-5">Opening hours : saturday-sunday-8am to 5pm</span>
         <div className="flex ml-auto mt-1 md:mt-0 justify-center items-center">
-          <span className="bg-red-600 w-6 h-6 rounded-full"></span>
-          <span className="bg-red-600 w-6 h-6 rounded-full"></span>
-          <span className="bg-red-600 w-6 h-6 rounded-full"></span>
-          <span className="bg-red-600 w-6 h-6 rounded-full"></span>
-          <button className="text-sm mr-5 md:mr-20 ml-3">Login</button>
+          <span className="w-6 h-6 rounded-full"><img src="https://img.icons8.com/ios/24/000000/whatsapp.png"/></span>
+          <span className="w-6 h-6 rounded-full"><img src="https://img.icons8.com/ios-glyphs/24/000000/telegram-app.png"/></span>
+          <span className="w-6 h-6 rounded-full"><img src="https://img.icons8.com/ios/24/000000/ringer-volume.png"/></span>
+          <span className="w-6 h-6 rounded-full"><img src="https://img.icons8.com/ios/24/000000/facebook-new.png"/></span>
+          <button className="text-sm mr-5 md:mr-20 ml-8 flex"><img src="https://img.icons8.com/ios/24/000000/privacy.png"/>Login</button>
         </div>
       </div>
 
@@ -20,7 +24,9 @@ export default function Header() {
         </div>
 
         <div className="w-6/12 md:w-auto h-20 flex mt-3 md:mt-0">
-          <div className="w-20 bg-gray-500"></div>
+          <div className="w-20 flex justify-center items-center">
+            <img src="https://img.icons8.com/ios/48/000000/pricing-structure.png"/>
+          </div>
           <div className="flex flex-col items-center h-full w-auto">
             <span className="text-sm"><b>Visit Us</b></span>
             <span className="text-xs">1address</span>
@@ -30,7 +36,9 @@ export default function Header() {
         </div>
 
         <div className="h-20 w-6/12 md:w-auto flex mt-3 md:mt-0">
-          <div className="bg-gray-500 h-full w-20"></div>
+          <div className=" h-full w-20 flex justify-center items-center">
+            <img src="https://img.icons8.com/ios/48/000000/open-envelope-stamp.png"/>
+          </div>
           <div className=" flex flex-col justify-center h-full w-auto ">
             <span className="text-sm"><b>Email</b></span>
             <span className="text-xs">sample@gmail.com</span>
@@ -38,7 +46,9 @@ export default function Header() {
         </div>
 
         <div className="h-20 w-6/12 md:w-auto flex mt-3 md:mt-0 mb-3 md:mb-0">
-          <div className="h-full w-20 bg-gray-500"></div>
+          <div className="h-full w-20 flex justify-center items-center">
+            <img src="https://img.icons8.com/ios/48/000000/ringer-volume.png"/>
+          </div>
           <div className="flex flex-col justify-center h-full w-auto">
             <span className="text-sm"><b>Call Us</b></span>
             <span className="text-xs">0088-988-877777</span>

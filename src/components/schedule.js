@@ -64,14 +64,14 @@ export default function Schedule () {
         <div className="w-full h-32 bg-gray-500 flex justify-center items-center">
           <span className="text-5xl"><b>Schedule</b></span>
         </div>
-        <div className="md:w-10/12 w-full bg-blue-600">
+        <div className="md:w-10/12 w-full bg-white">
           <DataTable
             title="Google Sheets Data"
             columns={columns}
             data={data}
           />
         </div>
-        <span className="md:text-2xl text-md mt-5">PLS NOTE ABOVE SCHEDULE IS SUBJECT TO CHANGE WITHOUT PRIOR NOTICE</span>
+        <span className="md:text-xl text-md mt-5 pr-3 pl-3">PLS NOTE ABOVE SCHEDULE IS SUBJECT TO CHANGE WITHOUT PRIOR NOTICE</span>
       </div>
     </div>
   )

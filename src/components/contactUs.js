@@ -41,10 +41,18 @@ export default function ContacUs () {
               <span className="text-sm">Phone: 960 1234567 / 960 1234567</span>
               <span className="text-sm">Mobile: 960 1234567</span>
               <div className="h-12 w-full mt-3 flex justify-center items-center">
-                <span className="bg-gray-600 h-10 w-10 rounded-full mr-1"></span>
-                <span className="bg-gray-600 h-10 w-10 rounded-full mr-1"></span>
-                <span className="bg-gray-600 h-10 w-10 rounded-full mr-1"></span>
-                <span className="bg-gray-600 h-10 w-10 rounded-full"></span>
+                <span className="h-8 w-8 rounded-full mr-1">
+                  <img src="https://img.icons8.com/ios/24/000000/whatsapp.png"/>
+                </span>
+                <span className="h-8 w-8 rounded-full mr-1">
+                  <img src="https://img.icons8.com/ios-glyphs/24/000000/telegram-app.png"/>
+                </span>
+                <span className="h-8 w-8 rounded-full mr-1">
+                  <img src="https://img.icons8.com/ios/24/000000/ringer-volume.png"/>
+                </span>
+                <span className="h-8 w-8 rounded-full">
+                  <img src="https://img.icons8.com/ios/24/000000/facebook-new.png"/>
+                </span>
               </div>
               <div className="h-32 w-full mt-3">Google map location</div>
             </div>
