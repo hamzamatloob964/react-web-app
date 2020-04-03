@@ -1,45 +1,48 @@
-import React from 'react'
-// import '../App.css'
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
+import React,{useState} from 'react'
+import '../App.css'
+import ItemsCarousel from 'react-items-carousel';
 
 export default function Services () {
+
+  const [activeItemIndex, setActiveItemIndex] = useState(0);
+  const chevronWidth = 40; 
   return (
     <div>
       <div className="bg-white flex flex-col items-center ">
 
-        <div  className="w-full bg-gray-400 flex flex-col items-center">
-          <span className="md:text-5xl text-4xl md:mt-10 mt-5">OUR SERVICES</span>
-          <div className="h-48 w-11/12 bg-gray-600">slider
-            {/* <Carousel>
-              <div>
-                <img src={require('../../src/assets/images/pic1.png')} />
-                <p className="legend">Legend 1</p>
-              </div>
-              <div>
-                <img src={require('../../src/assets/images/pic2.png')} />
-                <p className="legend">Legend 2</p>
-                </div>
-                <div>
-                  <img src={require('../../src/assets/images/pic3.png')} />
-                  <p className="legend">Legend 3</p>
-                </div>
-            </Carousel> */}
+        <div  className="w-full bg-gray-300 flex flex-col items-center">
+          <span className="md:text-4xl text-xl mt-3 mb-3">OUR SERVICES</span>
+          <div className="h-48 w-11/12 ">
+            <ItemsCarousel
+              requestToChangeActive={setActiveItemIndex}
+              activeItemIndex={activeItemIndex}
+              numberOfCards={3}
+              gutter={20}
+              leftChevron={<button>{'<'}</button>}
+              rightChevron={<button>{'>'}</button>}
+              outsideChevron
+              chevronWidth={chevronWidth}
+            >
+              <img className="services-carousel" src={require('../../src/assets/images/pic1.png')} />
+              <img className="services-carousel" src={require('../../src/assets/images/pic1.png')} />
+              <img className="services-carousel" src={require('../../src/assets/images/pic1.png')} />
+              <img className="services-carousel" src={require('../../src/assets/images/pic1.png')} />
+            </ItemsCarousel>
           </div>
         </div>
 
         <div className="relative w-10/12 bg-white flex md:flex-row flex-col">
           <div className=" h-full pt-10 pb-10 md:w-7/12 w-full bg-white">
-            <span className="lg:text-4xl md:text-3xl"><b>Why Customers Choose Us</b></span><br></br><br></br>
-            <span className="lg:text-4xl md:text-3xl"><b>Reliable andFast delivery</b></span><br></br>
-            <span className="lg:text-4xl md:text-3xl"><b>24/7Support</b></span><br></br>
-            <span className="lg:text-4xl md:text-3xl"><b>Well recognizedby the Maldives</b></span><br></br><br></br>
-            <span className="md:text-2xl text-base">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs.</span>
+            <span className="lg:text-3xl md:text-2xl"><b>Why Customers Choose Us</b></span><br></br><br></br>
+            <span className="lg:text-3xl md:text-2xl"><b>Reliable andFast delivery</b></span><br></br>
+            <span className="lg:text-3xl md:text-2xl"><b>24/7Support</b></span><br></br>
+            <span className="lg:text-3xl md:text-2xl"><b>Well recognizedby the Maldives</b></span><br></br><br></br>
+            <span className="md:text-xl text-base">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs.</span>
           </div>
 
           <div className="bg-indigo-800 md:w-5/12 w-full lg:pr-10 lg:pl-10 pl-2 pr-2 pt-2 md:pt-0  flex flex-col req-quote">
 
-            <span className="lg:text-4xl md:text-3xl mb-8 md:mt-3 text-white">Request a Quote</span>
+            <span className="md:text-3xl text-xl mb-8 md:mt-3 text-white">Request a Quote</span>
             <div className="h-8 w-12/12 bg-white mb-3 flex">
               <span className="text-sm mt-1 ml-2">Name:</span>
               <input className="w-10/12 ml-2"></input>
@@ -77,7 +80,7 @@ export default function Services () {
             </div>
 
             <div className="h-8 w-12/12 bg-indigo-800 mb-3 flex justify-center items-center">
-              <button className="w-40 h-full bg-white">Submit</button>
+              <button className="w-40 h-full bg-white hover:bg-indigo-800 hover:text-white">Submit</button>
             </div>
           </div>
         </div>

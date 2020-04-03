@@ -34,16 +34,16 @@ export default function Footer () {
           <div className="h-56 md:w-3/12 w-6/12 flex flex-col pt-12 md:mr-10">
             <div className="w-full bg-gray-500 h-32">image</div>
             <div className="w-full h-12 flex justify-center items-center mt-2">
-              <span className="h-8 w-8 rounded-full mr-2">
+              <span className="h-8 w-8 rounded-full mr-2 cursor-pointer">
                 <img src="https://img.icons8.com/ios/48/000000/whatsapp.png"/>
               </span>
-              <span className="h-8 w-8 rounded-full mr-2">
+              <span className="h-8 w-8 rounded-full mr-2 cursor-pointer">
                 <img src="https://img.icons8.com/ios-glyphs/48/000000/telegram-app.png"/>
               </span>
-              <span className="h-8 w-8 rounded-full mr-2">
+              <span className="h-8 w-8 rounded-full mr-2 cursor-pointer">
                 <img src="https://img.icons8.com/ios/48/000000/ringer-volume.png"/>
               </span>
-              <span className="h-8 w-8 rounded-full mr-2">
+              <span className="h-8 w-8 rounded-full mr-2 cursor-pointer">
                 <img src="https://img.icons8.com/ios/48/000000/facebook-new.png"/>
               </span>
             </div>

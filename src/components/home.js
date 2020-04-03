@@ -1,5 +1,6 @@
 import React from 'react';
-
+import * as Scroll from 'react-scroll';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import Header from './header'
 import HomePage from './homePage'
 import AboutUs from './aboutUs'
@@ -13,6 +14,18 @@ import '../App.css'
 
 export default function WebApp () {
 
+  function goToContactUs () {
+    console.log("function called....")
+    scroller.scrollTo('contactUs', {
+      duration: 1500,
+      delay: 100,
+      smooth: true,
+      containerId: 'ContainerElementID',
+      offset: 50, 
+    })
+    //scroll.scrollToBottom()
+  }
+
   return(
     <div >
 
@@ -20,22 +33,34 @@ export default function WebApp () {
       <Header/>
 
       {/* home page carousel section */}
-      <HomePage/>
+      <div id="home">
+        <HomePage/>
+      </div>
 
       {/* About us section */}
-      <AboutUs/>
+      <div id="aboutUs">
+        <AboutUs/>
+      </div>
 
       {/* our services section */}
-      <Services/>
+      <div id="services">
+        <Services/>
+      </div>
 
       {/* schedule section */}
-      <Schedule/>
+      <div id="schedule">
+        <Schedule/>
+      </div>
 
       {/* contact us */}
-      <ContactUs/>
+      <div id="contactUs">
+        <ContactUs />
+      </div>
 
       {/* partenars section */}
-      <Partners/>
+      <div id="partners">
+        <Partners/>
+      </div>
 
       {/* footer section */}
       <Footer/>

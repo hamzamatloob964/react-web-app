@@ -1,8 +1,6 @@
 import React from 'react';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import PinterestIcon from '@material-ui/icons/Pinterest';
-import AddIcCallIcon from '@material-ui/icons/AddIcCall';
+import * as Scroll from 'react-scroll';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 export default function Header() {
   return (
@@ -10,10 +8,10 @@ export default function Header() {
       <div className="md:h-12 h-20 flex flex-col md:flex-row bg-gray-300">
         <span className="md:ml-20 xs:ml-10 md:text-sm xs:text-xs md:mt-3 mt-5">Opening hours : saturday-sunday-8am to 5pm</span>
         <div className="flex ml-auto mt-1 md:mt-0 justify-center items-center">
-          <span className="w-6 h-6 rounded-full"><img src="https://img.icons8.com/ios/24/000000/whatsapp.png"/></span>
-          <span className="w-6 h-6 rounded-full"><img src="https://img.icons8.com/ios-glyphs/24/000000/telegram-app.png"/></span>
-          <span className="w-6 h-6 rounded-full"><img src="https://img.icons8.com/ios/24/000000/ringer-volume.png"/></span>
-          <span className="w-6 h-6 rounded-full"><img src="https://img.icons8.com/ios/24/000000/facebook-new.png"/></span>
+          <span className="w-6 h-6 rounded-full cursor-pointer"><img src="https://img.icons8.com/ios/24/000000/whatsapp.png"/></span>
+          <span className="w-6 h-6 rounded-full cursor-pointer"><img src="https://img.icons8.com/ios-glyphs/24/000000/telegram-app.png"/></span>
+          <span className="w-6 h-6 rounded-full cursor-pointer"><img src="https://img.icons8.com/ios/24/000000/ringer-volume.png"/></span>
+          <span className="w-6 h-6 rounded-full cursor-pointer"><img src="https://img.icons8.com/ios/24/000000/facebook-new.png"/></span>
           <button className="text-sm mr-5 md:mr-20 ml-8 flex"><img src="https://img.icons8.com/ios/24/000000/privacy.png"/>Login</button>
         </div>
       </div>
@@ -58,13 +56,37 @@ export default function Header() {
 
       <div className="md:h-12 w-full bg-indigo-800 flex justify-center">
         <div className="md:w-10/12 text-white flex md:flex-row flex-col items-center mt-3 md:mt-0">
-          <span className="md:mr-8 mt-2 md:mt-0">HOME</span>
-          <span className="md:mr-8 mt-2 md:mt-0">ABOUT</span>
-          <span className="md:mr-8 mt-2 md:mt-0">SERVICES</span>
-          <span className="md:mr-16 mt-2 md:mt-0">SCHEDULE</span>
-          <span className="mt-2 md:mt-0">CONTACT US</span>
-          <span className="md:ml-auto mt-2 md:mt-0">QUOTE</span>
-          <span className="mt-2 md:ml-5 md:mt-0">BOOKING</span>
+          <span className="md:mr-8 mt-2 md:mt-0 cursor-pointer">
+            <Link to="home" activeClass="active" spy={true} smooth={true}>
+              HOME
+            </Link>
+          </span>
+          <span className="md:mr-8 mt-2 md:mt-0 cursor-pointer">
+            <Link to="aboutUs" activeClass="active" spy={true} smooth={true}>
+              ABOUT US
+            </Link>
+          </span>
+          <span className="md:mr-8 mt-2 md:mt-0 cursor-pointer">
+            <Link to="services" activeClass="active" spy={true} smooth={true}>
+              SERVICES
+            </Link>
+          </span>
+          <span className="md:mr-16 mt-2 md:mt-0 cursor-pointer">
+            <Link to="schedule" activeClass="active" spy={true} smooth={true}>
+            SCHEDULE
+            </Link>
+          </span>
+          <span className="mt-2 md:mt-0 cursor-pointer">
+            <Link to="contactUs" activeClass="active" spy={true} smooth={true}>
+              CONTACT US
+            </Link>
+          </span>
+          <span className="md:ml-auto mt-2 md:mt-0 cursor-pointer">
+            <Link to="services" activeClass="active" spy={true} smooth={true} offset={100}>
+              QUOTE <span className="ml-1">BOOKING</span>
+            </Link>
+          </span>
+            {/* <span className="mt-2 md:ml-5 md:mt-0">BOOKING</span> */}
         </div>
       </div>
     </div>

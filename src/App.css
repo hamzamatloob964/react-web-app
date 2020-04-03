@@ -220,3 +220,11 @@
   .carousel .thumbs{
     display: none;
   }
+  .about-carousel{
+    height: 110px;
+    width: 100%;;
+  }
+  .services-carousel{
+    height: 140px;
+    width: 100%;;
+  }

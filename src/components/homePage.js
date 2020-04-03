@@ -9,17 +9,14 @@ export default function HomePage () {
     <div style={{height:'350px'}} className="w-full mt-2 bg-gray-600">
       <Carousel>
         <div>
-              <img src={require('../../src/assets/images/pic1.png')} />
-              <p className="legend">Legend 1</p>
-          </div>
-          <div>
-              <img src={require('../../src/assets/images/pic2.png')} />
-              <p className="legend">Legend 2</p>
-          </div>
-          <div>
-              <img src={require('../../src/assets/images/pic3.png')} />
-              <p className="legend">Legend 3</p>
-          </div>
+          <img src={require('../../src/assets/images/pic1.png')} />
+        </div>
+        <div>
+          <img src={require('../../src/assets/images/pic2.png')} />
+        </div>
+        <div>
+          <img src={require('../../src/assets/images/pic3.png')} />
+        </div>
       </Carousel>
     </div>      
   )
