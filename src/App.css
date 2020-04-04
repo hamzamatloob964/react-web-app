@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -28,6 +33,31 @@
 }
 .App-link {
   color: #61dafb;
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-item:hover .menu-item-text {
+  visibility: hidden;
+  transform: translateY(-40px);
+}
+.menu-item:hover .menu-item-img {
+  max-height: 30px;
+}
+.menu-item-text:not(.menu-active) {
+  position: relative;
+  transition: all 0.25s;
+}
+.menu-item-img {
+  max-height: 0px;
+  transition: all 0.25s;
+  position: absolute;
+}
+.menu-active {
+  transform: rotateZ(360deg) scale(1.1);
+  transition: transform 0.25s !important;
 }
 
 @keyframes App-logo-spin {
