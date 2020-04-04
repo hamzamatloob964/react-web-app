@@ -13,7 +13,7 @@ export default function AboutUs () {
         <div className="md:h-32 w-full bg-gray-300 flex justify-center items-center">
           <span className="md:text-4xl text-xl">ABOUT US</span>
         </div>
-        <div className="w-10/12  pt-5 pb-5">
+        <div className="w-10/12  pt-5 pb-5 my-10">
           <span className="md:text-lg text-base">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex!Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs!"Now fax quizJack!"my brave</span>
           <br></br>
           <br></br>
@@ -26,14 +26,14 @@ export default function AboutUs () {
           <span className="md:text-lg text-base"><b>NOTE:</b></span><br></br>
           <span className="md:text-lg text-base">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex!Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. </span>
         </div>
-        <div className="h-32 w-11/12 ">
+        <div className="h-32 w-11/12 my-5">
           <ItemsCarousel
             requestToChangeActive={setActiveItemIndex}
             activeItemIndex={activeItemIndex}
             numberOfCards={3}
             gutter={20}
-            leftChevron={<button>{'<'}</button>}
-            rightChevron={<button>{'>'}</button>}
+            leftChevron={window.innerWidth < 500 ? false : <button>{'<'}</button>}
+            rightChevron={window.innerWidth < 500 ? false : <button>{'>'}</button>}
             outsideChevron
             chevronWidth={chevronWidth}
           >

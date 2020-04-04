@@ -31,7 +31,7 @@ export default function Footer () {
             <span className="text-sm mb-5">Text</span>
             
           </div>
-          <div className="h-56 md:w-3/12 w-6/12 flex flex-col pt-12 md:mr-10">
+          <div className="h-56 md:w-3/12 w-6/12 flex flex-col md:pt-12 md:mr-10">
             <div className="w-full bg-gray-500 h-32">image</div>
             <div className="w-full h-12 flex justify-center items-center mt-2">
               <span className="h-8 w-8 rounded-full mr-2 cursor-pointer">

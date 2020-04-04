@@ -62,9 +62,9 @@ export default function Schedule () {
     <div>
       <div className="bg-white w-full flex flex-col items-center md:mt-32 mt-5">
         <div className="w-full h-32 bg-gray-300 flex justify-center items-center">
-          <span className="md:text-4xl text-xl">SCHEDULE</span>
+          <span className="md:text-4xl text-xl mt-5">SCHEDULE</span>
         </div>
-        <div className="md:w-10/12 w-full bg-white">
+        <div className="md:w-10/12 w-full bg-white my-10"  data-aos="zoom-in">
           <div className="mt-3 ml-3">
             <span className="mr-3 ">Country:</span>
             <input className="w-24 h-8 bg-gray-400"></input>

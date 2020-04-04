@@ -9,27 +9,32 @@ export default function Partners () {
 
   return (
     <div>
-      <div style={{height:'510px'}} className="bg-white w-full flex flex-col justify-center items-center">
-        <div style={{height:'350px'}} className="w-full bg-white flex flex-col items-center justify-center p-5">
-          <span className="md:text-4xl text-xl"><b>PARTNERS</b></span>
+      <div style={{}} className="bg-white w-full flex flex-col justify-center items-center my-6">
+        <div style={{}} className="w-full bg-white flex flex-col items-center justify-center my-5">
+          <span className="md:text-4xl text-xl" data-aos="fade-up"><b>PARTNERS</b></span>
           <span className="text-xl">text text text jkasdfjk adsdasd asdkasd asdkjasd kasdas dkasdasdjj kasd</span>
           <span className="text-xl">text text text jkasdfjk adsdasd asdkasd asdkjasd kasdas dkasdasdjj kasdjd asdjkasd asjd sjkadjasdasdasd jhadasdjhasdas</span>
         </div>
-        <div className="w-11/12 h-40 ">
+        <div className="w-11/12 h-40 my-5">
           <ItemsCarousel
             requestToChangeActive={setActiveItemIndex}
             activeItemIndex={activeItemIndex}
             numberOfCards={3}
             gutter={20}
-            leftChevron={<button>{'<'}</button>}
-            rightChevron={<button>{'>'}</button>}
-            outsideChevron
+            leftChevron={window.innerWidth < 500 ? false : <button>{'<'}</button>}
+            rightChevron={window.innerWidth < 500 ? false : <button>{'>'}</button>}
             chevronWidth={chevronWidth}
+            outsideChevron
           >
-            <img className="services-carousel" src={require('../../src/assets/images/pic1.png')} />
-            <img className="services-carousel" src={require('../../src/assets/images/pic1.png')} />
-            <img className="services-carousel" src={require('../../src/assets/images/pic1.png')} />
-            <img className="services-carousel" src={require('../../src/assets/images/pic1.png')} />
+            {
+              [1,2,3, 4].map((item, i) => {
+                return (
+                  <div key={i} className="bg-gray-400 p-5 rounded-lg shadow-lg" style={{height: '120px'}} data-aos="fade-left">
+                    Partner {i + 1}
+                  </div>
+                )
+              })
+            }
           </ItemsCarousel>
         </div>
       </div>

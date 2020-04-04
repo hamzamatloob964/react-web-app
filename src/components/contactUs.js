@@ -2,13 +2,13 @@ import React from 'react'
 
 export default function ContacUs () {
   return (
-    <div>
+    <div class="my-5" data-aos="zoom-in">
       <div className="bg-white w-full flex flex-col mt-3">
         <div className="w-full h-32 bg-gray-300 flex justify-center items-center">
           <span className="md:text-4xl text-xl">CONTACT US</span>
         </div>
 
-        <div className="w-full flex flex-col items-center">
+        <div className="w-full flex flex-col items-center my-5">
           <div className="lg:w-10/12 md:w-full flex md:flex-row flex-col md:p-2 lg:p-0">
 
             <div className="h-full md:w-4/12 w-full flex flex-col pt-5 md:pr-5 p-5 md:pt-5">
@@ -100,46 +100,28 @@ export default function ContacUs () {
           </div>
         </div>
 
-        <div className=" w-full bg-gray-500 flex justify-center items-center flex-col">
+        <div className=" w-full bg-gray-500 flex justify-center items-center flex-col py-5">
           <div className="md:w-10/12 w-full flex md:flex-row flex-col pt-3 pb-3 md:justify-between p-5 md:p-0">
-            <div className="h-full md:w-3/12 w-full flex flex-col">
-              <span className="text-xl md:mt-3 mb-3">Text</span>
-              <div className="flex flex-col p-5 bg-white rounded shadow-lg">
-                <span className="text-md"><b>CompanySdn Bhd</b></span>
-                <span className="text-sm">text</span>
-                <span className="text-sm">text</span>
-                <span className="text-sm">text</span>
-                <span className="text-sm">text</span>
-                <span className="text-sm">text</span>
-              </div>
-            </div>
-
-            <div className="h-full md:w-3/12 w-full flex flex-col">
-              <span className="text-xl md:mt-3 mb-3">Text</span>
-              <div className="flex flex-col bg-white p-5 rounded shadow-lg">
-                <span className="text-md"><b>CompanySdn Bhd</b></span>
-                <span className="text-sm">text</span>
-                <span className="text-sm">text</span>
-                <span className="text-sm">text</span>
-                <span className="text-sm">text</span>
-                <span className="text-sm">text</span>
-              </div>
-            </div>
-
-            <div className="h-full md:w-3/12 w-full flex flex-col ">
-              <span className="text-xl md:mt-3 mb-3">Text</span>
-              <div className="flex flex-col bg-white p-5 rounded shadow-lg">
-                <span className="text-md"><b>CompanySdn Bhd</b></span>
-                <span className="text-sm">text</span>
-                <span className="text-sm">text</span>
-                <span className="text-sm">text</span>
-                <span className="text-sm">text</span>
-                <span className="text-sm">text</span>
-              </div>
-            </div>
+            {
+              [1,2,3].map((item,i) => {
+                return (
+                  <div key={i} className="h-full md:w-3/12 w-full flex flex-col" data-aos="fade-right">
+                    <span className="text-xl md:mt-3 mb-3">Text</span>
+                    <div className="flex flex-col p-5 bg-white rounded shadow-lg">
+                      <span className="text-md"><b>CompanySdn Bhd</b></span>
+                      <span className="text-sm">text</span>
+                      <span className="text-sm">text</span>
+                      <span className="text-sm">text</span>
+                      <span className="text-sm">text</span>
+                      <span className="text-sm">text</span>
+                    </div>
+                  </div>
+                )
+              })
+            }
           </div>
 
-          <span className="md:text-xl text-lg">MORE</span>
+          <span className="md:text-xl text-lg mt-4">MORE</span>
 
         </div>
       </div>
