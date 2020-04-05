@@ -1,5 +1,6 @@
 import React, {useEffect, useRef, useState } from 'react';
 import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import Menu from './burgerMenu'
 
 export default function Header() {
 
@@ -10,6 +11,7 @@ export default function Header() {
   }, [])
 
   const [isSticky, setSticky] = useState(false)
+  const [showMenu, setMenu] = useState(false)
 
   const stickyRef = useRef(null)
   const stickyContainer = useRef(null)
@@ -26,6 +28,7 @@ export default function Header() {
 
   return (
     <div ref={stickyContainer} className="flex flex-col">
+      
       <div className="md:h-12 h-20 flex flex-col md:flex-row bg-gray-300">
         <span className="md:ml-20 xs:ml-10 md:text-sm xs:text-xs md:mt-3 mt-5">Opening hours : Saturday to Sunday - 8AM to 5PM</span>
         <div className="flex ml-auto mt-2 md:mt-0 justify-center items-center">
@@ -44,6 +47,11 @@ export default function Header() {
       </div>
 
       <div className="md:h-40 lg:pr-16 md:pr-16 lg:pl-16 md:pl-8 flex md:flex-row flex-col md:justify-between items-center justify-center">
+
+        <br/>
+        
+        <Menu />
+
         <div className="rounded-lg w-64 bg-gray-400 h-24 flex justify-center items-center mt-4 md:mt-0">
           <span className="text-4xl"><b>Logo</b></span>
         </div>
@@ -81,7 +89,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div style={{minHeight: '48px'}}>
+      <div className="hidden md:block" style={{minHeight: '48px'}}>
         <div className={`md:h-12 w-full bg-indigo-800 flex justify-center py-5 md:py-0 ${isSticky ? 'md:fixed' : 'md:sticky'} top-0 z-50`} ref={stickyRef}>
           <div className="md:w-10/12 text-white flex md:flex-row flex-col items-center md:mt-0">
             <Link className="md:mr-8 md:mt-0 cursor-pointer menu-item" spy={true} smooth={true} to="home" activeClass="menu-active">

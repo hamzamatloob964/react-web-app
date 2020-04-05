@@ -258,3 +258,16 @@ html {
     height: 140px;
     width: 100%;;
   }
+  /* data table overrides */
+  .rdt_TableHeadRow {
+    background-color: gray;
+  }
+  .rdt_TableHeadRow div {
+    color: white;
+  }
+  .burger-menu {
+    padding-top: 40px;
+  }
+  .burger-menu .menu-item {
+    margin-bottom: 20px;
+  }
