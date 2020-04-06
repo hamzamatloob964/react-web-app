@@ -260,7 +260,7 @@ html {
   }
   /* data table overrides */
   .rdt_TableHeadRow {
-    background-color: gray;
+    background-color: gray !important;
   }
   .rdt_TableHeadRow div {
     color: white;
@@ -270,4 +270,11 @@ html {
   }
   .burger-menu .menu-item {
     margin-bottom: 20px;
+  }
+  .carousel-container {
+    padding-bottom: 30px;
+  }
+  .custom-dot-list-style {
+    /* margin-top: 20px;
+    transform: translateY(20px); */
   }

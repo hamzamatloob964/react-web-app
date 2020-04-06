@@ -1,6 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 export default function ContacUs () {
+
+  const [showItems, setShowItems] = useState(3);
+  const [page, setPage] = useState(1);
+
   return (
     <div class="my-5" data-aos="zoom-in">
       <div className="bg-white w-full flex flex-col mt-3">
@@ -101,19 +105,21 @@ export default function ContacUs () {
         </div>
 
         <div className=" w-full bg-gray-500 flex justify-center items-center flex-col py-5">
-          <div className="md:w-10/12 w-full flex md:flex-row flex-col pt-3 pb-3 md:justify-between p-5 md:p-0">
+          <div className="md:w-10/12 w-full flex md:flex-row flex-col pt-3 pb-3  p-5 md:p-0 flex-wrap mb-5">
             {
-              [1,2,3].map((item,i) => {
+              [1,2,3,4,5,6].slice(0, showItems * page).map((item,i) => {
                 return (
-                  <div key={i} className="h-full md:w-3/12 w-full flex flex-col" data-aos="fade-right">
-                    <span className="text-xl md:mt-3 mb-3">Text</span>
-                    <div className="flex flex-col p-5 bg-white rounded shadow-lg">
-                      <span className="text-md"><b>CompanySdn Bhd</b></span>
-                      <span className="text-sm">text</span>
-                      <span className="text-sm">text</span>
-                      <span className="text-sm">text</span>
-                      <span className="text-sm">text</span>
-                      <span className="text-sm">text</span>
+                  <div key={i} className="h-full md:w-4/12 w-full md:px-4" data-aos="fade-right">
+                    <div className="flex flex-col">
+                      <span className="text-xl md:mt-3 mb-3">Text</span>
+                      <div className="flex flex-col p-5 bg-white rounded shadow-lg">
+                        <span className="text-md"><b>CompanySdn Bhd</b></span>
+                        <span className="text-sm">text</span>
+                        <span className="text-sm">text</span>
+                        <span className="text-sm">text</span>
+                        <span className="text-sm">text</span>
+                        <span className="text-sm">text</span>
+                      </div>
                     </div>
                   </div>
                 )
@@ -121,7 +127,15 @@ export default function ContacUs () {
             }
           </div>
 
-          <span className="md:text-xl text-lg mt-4">MORE</span>
+          
+          {
+            (page * showItems) !== 6 &&
+            <button 
+              onClick={() => setPage(page + 1)} 
+              class="bg-indigo-700 hover:bg-indigo-800 text-white font-bold py-2 px-4 rounded">
+              More
+            </button>
+          }
 
         </div>
       </div>

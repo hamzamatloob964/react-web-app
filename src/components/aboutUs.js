@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import ItemsCarousel from 'react-items-carousel';
+import Carousel from './carousel';
 import '../App.css'
 
 export default function AboutUs () {
@@ -27,21 +27,20 @@ export default function AboutUs () {
           <span className="md:text-lg text-base">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex!Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. </span>
         </div>
         <div className="h-32 w-11/12 my-5">
-          <ItemsCarousel
-            requestToChangeActive={setActiveItemIndex}
-            activeItemIndex={activeItemIndex}
-            numberOfCards={3}
-            gutter={20}
-            leftChevron={window.innerWidth < 500 ? false : <button>{'<'}</button>}
-            rightChevron={window.innerWidth < 500 ? false : <button>{'>'}</button>}
-            outsideChevron
-            chevronWidth={chevronWidth}
-          >
-            <img className="about-carousel" src={require('../../src/assets/images/pic1.png')} />
-            <img className="about-carousel" src={require('../../src/assets/images/pic1.png')} />
-            <img className="about-carousel" src={require('../../src/assets/images/pic1.png')} />
-            <img className="about-carousel" src={require('../../src/assets/images/pic1.png')} />
-          </ItemsCarousel>
+          <Carousel>
+            <div class="px-5">
+              <img className="about-carousel" src={require('../../src/assets/images/pic1.png')} alt="" />
+            </div>
+            <div class="px-5">
+              <img className="about-carousel" src={require('../../src/assets/images/pic1.png')} alt="" />
+            </div>
+            <div class="px-5">
+              <img className="about-carousel" src={require('../../src/assets/images/pic1.png')} alt="" />
+            </div>
+            <div class="px-5">
+              <img className="about-carousel" src={require('../../src/assets/images/pic1.png')} alt="" />
+            </div>
+          </Carousel>
         </div>
       </div>
     </div>

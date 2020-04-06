@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import '../App.css'
-import ItemsCarousel from 'react-items-carousel';
+import Carousel from './carousel';
 
 export default function Partners () {
 
@@ -16,7 +16,7 @@ export default function Partners () {
           <span className="text-xl">text text text jkasdfjk adsdasd asdkasd asdkjasd kasdas dkasdasdjj kasdjd asdjkasd asjd sjkadjasdasdasd jhadasdjhasdas</span>
         </div>
         <div className="w-11/12 h-40 my-5">
-          <ItemsCarousel
+          <Carousel
             requestToChangeActive={setActiveItemIndex}
             activeItemIndex={activeItemIndex}
             numberOfCards={3}
@@ -27,15 +27,17 @@ export default function Partners () {
             outsideChevron
           >
             {
-              [1,2,3, 4].map((item, i) => {
+              [1,2,3, 4, 5].map((item, i) => {
                 return (
-                  <div key={i} className="bg-gray-400 p-5 rounded-lg shadow-lg" style={{height: '120px'}} data-aos="fade-left">
-                    Partner {i + 1}
+                  <div key={i} className="px-5" data-aos="fade-left">
+                    <div className="bg-gray-400 p-5 rounded-lg shadow-lg" style={{height: '120px'}}>
+                      Partner {i + 1}
+                    </div>
                   </div>
                 )
               })
             }
-          </ItemsCarousel>
+          </Carousel>
         </div>
       </div>
     </div>

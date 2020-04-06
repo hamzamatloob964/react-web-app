@@ -9,13 +9,13 @@ export default function HomePage () {
     <div style={{height:'350px'}} className="w-full mt-0 bg-gray-600">
       <Carousel>
         <div>
-          <img src={require('../../src/assets/images/pic1.jfif')} />
+          <img style={{objectFit: 'cover'}} src={require('../../src/assets/images/pic1.jfif')} />
         </div>
         <div>
-          <img src={require('../../src/assets/images/pic2.jpg')} />
+          <img style={{objectFit: 'cover'}} src={require('../../src/assets/images/pic2.jpg')} />
         </div>
         <div>
-          <img src={require('../../src/assets/images/pic3.jpg')} />
+          <img style={{objectFit: 'cover'}} src={require('../../src/assets/images/pic3.jpg')} />
         </div>
       </Carousel>
     </div>      

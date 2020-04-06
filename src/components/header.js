@@ -30,8 +30,8 @@ export default function Header() {
     <div ref={stickyContainer} className="flex flex-col">
       
       <div className="md:h-12 h-20 flex flex-col md:flex-row bg-gray-300">
-        <span className="md:ml-20 xs:ml-10 md:text-sm xs:text-xs md:mt-3 mt-5">Opening hours : Saturday to Sunday - 8AM to 5PM</span>
-        <div className="flex ml-auto mt-2 md:mt-0 justify-center items-center">
+        <div className="text-center md:text-left md:ml-20 xs:ml-10 md:text-sm xs:text-xs md:mt-3 mt-5">Opening hours : Saturday to Sunday - 8AM to 5PM</div>
+        <div className="flex md:ml-auto mt-2 md:mt-0 justify-center items-center">
           <span className="mr-2 w-6 h-6 rounded-full cursor-pointer">
             <img src="https://img.icons8.com/ios/24/000000/whatsapp.png" alt=""/></span>
           <span className="mr-2 w-6 h-6 rounded-full cursor-pointer">
@@ -50,10 +50,11 @@ export default function Header() {
 
         <br/>
         
-        <Menu />
-
-        <div className="rounded-lg w-64 bg-gray-400 h-24 flex justify-center items-center mt-4 md:mt-0">
-          <span className="text-4xl"><b>Logo</b></span>
+        <div className="flex items-center mt-4">
+          <Menu />
+          <div className="ml-8 md:ml-0 rounded-lg w-64 bg-gray-400 h-24 flex justify-center items-center md:mt-0">
+            <span className="text-4xl"><b>Logo</b></span>
+          </div>
         </div>
 
         <div className="w-6/12 md:w-auto h-20 flex mt-3 md:mt-0">
