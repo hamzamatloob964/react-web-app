@@ -4,8 +4,8 @@ export default function ContacUs () {
   return (
     <div>
       <div className="bg-white w-full flex flex-col mt-3">
-        <div className="w-full h-32 bg-gray-300 flex justify-center items-center">
-          <span className="md:text-4xl text-xl">CONTACT US</span>
+        <div className="w-full md:h-32 bg-gray-300 flex justify-center items-center">
+          <span className="md:text-4xl text-xl pt-5 pb-5 md:pt-0 md:pb-0">CONTACT US</span>
         </div>
 
         <div className="w-full flex flex-col items-center">
@@ -27,16 +27,13 @@ export default function ContacUs () {
                 <input style={{border:'none', borderBottom:'1px solid black'}} className="w-full h-8"></input>
                 <span className="text-md mt-3">Message:</span>
                 <textarea style={{border:'none', borderBottom:'1px solid black'}} className="w-full h-12"></textarea>
-                <button className="w-24 h-8 ml-auto hover:text-blue-600 ">Submit</button>
+                <button className="w-24 mt-3 h-8 ml-auto border border-black hover:border-blue-600 hover:text-blue-600 ">Submit</button>
               </div>
             </div>
 
             <div className="h-full md:w-4/12 w-full flex flex-col pt-5 pr-5 pb-5 md:pr-5 p-5 md:pt-5">
               <span className="text-xl"><b>NAME OFTHECOMPANY</b></span>
-              <span className="text-sm">ADDRESS</span>
-              <span className="text-sm">ADDRESS</span>
-              <span className="text-sm">ADDRESS</span>
-              <span className="text-sm">ADDRESS</span>
+              {[1,2,3].map((i) => <span key={i} className="text-sm">ADDRESS</span>)}
               <span className="text-sm mt-5">Email: contact@sample.com</span>
               <span className="text-sm">Phone: 960 1234567 / 960 1234567</span>
               <span className="text-sm">Mobile: 960 1234567</span>
@@ -102,39 +99,28 @@ export default function ContacUs () {
 
         <div className=" w-full bg-gray-500 flex justify-center items-center flex-col">
           <div className="md:w-10/12 w-full flex md:flex-row flex-col pt-3 pb-3 md:justify-between p-5 md:p-0">
+
             <div className="h-full md:w-3/12 w-full flex flex-col">
               <span className="text-xl md:mt-3 mb-3">Text</span>
               <div className="flex flex-col p-5 bg-white rounded shadow-lg">
                 <span className="text-md"><b>CompanySdn Bhd</b></span>
-                <span className="text-sm">text</span>
-                <span className="text-sm">text</span>
-                <span className="text-sm">text</span>
-                <span className="text-sm">text</span>
-                <span className="text-sm">text</span>
+                {[4,5,6].map((i) => <span key={i} className="text-sm">text</span>)}
               </div>
             </div>
 
-            <div className="h-full md:w-3/12 w-full flex flex-col">
+            <div className="h-full md:w-3/12 w-full flex flex-col mt-2 md:mt-0">
               <span className="text-xl md:mt-3 mb-3">Text</span>
               <div className="flex flex-col bg-white p-5 rounded shadow-lg">
                 <span className="text-md"><b>CompanySdn Bhd</b></span>
-                <span className="text-sm">text</span>
-                <span className="text-sm">text</span>
-                <span className="text-sm">text</span>
-                <span className="text-sm">text</span>
-                <span className="text-sm">text</span>
+                {[1,2,3].map((i) => <span key={i} className="text-sm">text</span>)}
               </div>
             </div>
 
-            <div className="h-full md:w-3/12 w-full flex flex-col ">
+            <div className="h-full md:w-3/12 w-full flex flex-col mt-2 md:mt-0">
               <span className="text-xl md:mt-3 mb-3">Text</span>
               <div className="flex flex-col bg-white p-5 rounded shadow-lg">
                 <span className="text-md"><b>CompanySdn Bhd</b></span>
-                <span className="text-sm">text</span>
-                <span className="text-sm">text</span>
-                <span className="text-sm">text</span>
-                <span className="text-sm">text</span>
-                <span className="text-sm">text</span>
+                {[1,2,3].map((i) => <span key={i} className="text-sm">text</span>)}
               </div>
             </div>
           </div>

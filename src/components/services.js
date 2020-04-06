@@ -8,12 +8,13 @@ export default function Services () {
   const chevronWidth = 40; 
   return (
     <div>
-      <div className="bg-white flex flex-col items-center ">
+      <div className="bg-white flex flex-col items-center mt-3 ">
 
         <div  className="w-full bg-gray-300 flex flex-col items-center">
-          <span className="md:text-4xl text-xl mt-3 mb-3">OUR SERVICES</span>
+          <span className="md:text-4xl text-xl pt-5 pb-5">OUR SERVICES</span>
           <div className="h-48 w-11/12 ">
             <ItemsCarousel
+              key={2}
               requestToChangeActive={setActiveItemIndex}
               activeItemIndex={activeItemIndex}
               numberOfCards={3}
@@ -57,8 +58,9 @@ export default function Services () {
               <input className="ml-1 contact-number"></input>
             </div>
 
-            <div className="h-8 w-12/12 bg-white mb-3 flex">
-              <div className="w-7/12 bg-white flex">
+            <div className="h-8 w-12/12 bg-indigo-800  mb-3 flex">
+
+              <div className="lg:w-5/12 md:w-6/12 bg-white flex">
                 <span className="text-sm mt-1 ml-2">Container Size: </span>
                 <input className="w-10 ml-2 "></input>
               </div>
@@ -67,11 +69,12 @@ export default function Services () {
                 <span className="text-sm mt-1 ml-2">Type: </span>
                 <input className="w-8/12 ml-2"></input>
               </div>
+              
             </div>
 
-            <div className="h-8 w-6/12 bg-white mb-3 flex">
+            <div className="h-8 cargo-main-div bg-white mb-3 flex">
               <span className="text-sm mt-1 ml-2">Cargo Type: </span>
-              <input className="w-16 ml-1"></input>
+              <input className="cargo-type ml-1"></input>
             </div>
 
             <div className="h-56 w-12/12 bg-white mb-3 flex flex-col">
@@ -80,7 +83,7 @@ export default function Services () {
             </div>
 
             <div className="h-8 w-12/12 bg-indigo-800 mb-3 flex justify-center items-center">
-              <button className="w-40 h-full bg-white hover:bg-indigo-800 hover:text-white">Submit</button>
+              <button className="w-40 h-full border border-indigo-800 hover:border-white text-white">Submit</button>
             </div>
           </div>
         </div>

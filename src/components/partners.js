@@ -17,6 +17,7 @@ export default function Partners () {
         </div>
         <div className="w-11/12 h-40 ">
           <ItemsCarousel
+            key={1}
             requestToChangeActive={setActiveItemIndex}
             activeItemIndex={activeItemIndex}
             numberOfCards={3}

@@ -60,19 +60,20 @@ export default function Schedule () {
 
   return (
     <div>
-      <div className="bg-white w-full flex flex-col items-center md:mt-32 mt-5">
-        <div className="w-full h-32 bg-gray-300 flex justify-center items-center">
-          <span className="md:text-4xl text-xl">SCHEDULE</span>
+      <div className="bg-white w-full flex flex-col items-center md:mt-40 mt-5">
+        <div className="w-full md:h-32 bg-gray-300 flex justify-center items-center mt-2">
+          <span className="md:text-4xl text-xl pt-5 pb-5 md:py-0 md:pb-0 ">SCHEDULE</span>
         </div>
         <div className="md:w-10/12 w-full bg-white">
-          <div className="mt-3 ml-3">
+          <div className="mt-3 ml-3 flex md:flex-row flex-col mb-3 md:mb-0">
             <span className="mr-3 ">Country:</span>
-            <input className="w-24 h-8 bg-gray-400"></input>
+            <input className="w-24 h-8 bg-gray-400 p-2"></input>
             <span className="ml-3 mr-3">To</span>
             <span className="ml-3 mr-3">Country:</span>
-            <input className="w-24 h-8 bg-gray-400"></input>
+            <input className="w-24 h-8 bg-gray-400 p-2"></input>
           </div>
           <DataTable
+            key="dt1"
             title="Google Sheets Data"
             columns={columns}
             data={data}

@@ -32,38 +32,42 @@ export default function WebApp () {
       {/* header section */}
       <Header/>
 
-      {/* home page carousel section */}
-      <div id="home">
-        <HomePage/>
+      <div id="dad" className="main-container" >
+
+        {/* home page carousel section */}
+        <div id="home">
+          <HomePage/>
+        </div>
+
+        {/* About us section */}
+        <div id="aboutUs">
+          <AboutUs/>
+        </div>
+
+        {/* our services section */}
+        <div id="services">
+          <Services/>
+        </div>
+
+        {/* schedule section */}
+        <div id="schedule">
+          <Schedule/>
+        </div>
+
+        {/* contact us */}
+        <div id="contactUs">
+          <ContactUs />
+        </div>
+
+        {/* partenars section */}
+        <div id="partners">
+          <Partners/>
+        </div>
+
+        {/* footer section */}
+        <Footer/>
       </div>
 
-      {/* About us section */}
-      <div id="aboutUs">
-        <AboutUs/>
-      </div>
-
-      {/* our services section */}
-      <div id="services">
-        <Services/>
-      </div>
-
-      {/* schedule section */}
-      <div id="schedule">
-        <Schedule/>
-      </div>
-
-      {/* contact us */}
-      <div id="contactUs">
-        <ContactUs />
-      </div>
-
-      {/* partenars section */}
-      <div id="partners">
-        <Partners/>
-      </div>
-
-      {/* footer section */}
-      <Footer/>
       
     </div>
     )
