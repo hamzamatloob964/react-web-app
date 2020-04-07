@@ -6,7 +6,6 @@ import '../../App.css'
 export default function ItemCarousel (props) {
   const [activeItemIndex, setActiveItemIndex] = useState(0);
   const chevronWidth = 40; 
-  //console.log(props.value)
 
   return (
     <ItemsCarousel
@@ -20,11 +19,7 @@ export default function ItemCarousel (props) {
       chevronWidth={chevronWidth}
     >
     
-      {/* <img className="about-carousel" src={require('../../../src/assets/images/pic1.png')} />
-      <img className="about-carousel" src={require('../../../src/assets/images/pic1.png')} />
-      <img className="about-carousel" src={require('../../../src/assets/images/pic1.png')} />
-      <img className="about-carousel" src={require('../../../src/assets/images/pic1.png')} /> */}
-      {[1,2,3,4].map(item => props.value)}
+      {props.images.map(item => <img key={Math.random()} className="about-carousel" src={require(`../../../src/assets/images/${item}.png`)} />)}
     </ItemsCarousel>
   )
 }

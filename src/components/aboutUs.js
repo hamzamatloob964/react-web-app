@@ -1,12 +1,8 @@
-import React,{useState} from 'react'
-import ItemsCarousel from 'react-items-carousel';
+import React from 'react'
 import '../App.css'
-//import ItemCarousel from './shared/Carousel'
+import ItemCarousel from './shared/Carousel'
 
 export default function AboutUs () {
-
-  const [activeItemIndex, setActiveItemIndex] = useState(0);
-  const chevronWidth = 40; 
 
   return (
     <div>
@@ -23,21 +19,8 @@ export default function AboutUs () {
         </div>
         <div className="h-32 w-11/12 ">
 
-          <ItemsCarousel
-            requestToChangeActive={setActiveItemIndex}
-            activeItemIndex={activeItemIndex}
-            numberOfCards={3}
-            gutter={20}
-            leftChevron={<button>{'<'}</button>}
-            rightChevron={<button>{'>'}</button>}
-            outsideChevron
-            chevronWidth={chevronWidth}
-          >
-            <img className="about-carousel" src={require('../../src/assets/images/pic1.png')} alt="" />
-            <img className="about-carousel" src={require('../../src/assets/images/pic1.png')} alt="" />
-            <img className="about-carousel" src={require('../../src/assets/images/pic1.png')} alt="" />
-            <img className="about-carousel" src={require('../../src/assets/images/pic1.png')} alt="" />
-          </ItemsCarousel>
+          <ItemCarousel images={['pic1','pic1','pic1','pic1']}/>
+
         </div>
       </div>
     </div>

@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import '../App.css'
 
-export default function Header() {
-
+export default function MobileViewHeader () {
   return (
     <div className="flex flex-col header-main">
 
@@ -52,42 +51,6 @@ export default function Header() {
             <span className="text-sm"><b>Call Us</b></span>
             <span className="text-xs">0088-988-877777</span>
           </div>
-        </div>
-      </div>
-
-      <div className="md:h-12 w-full bg-indigo-800 flex justify-center">
-        <div className="md:w-10/12 text-white flex md:flex-row flex-col items-center mt-3 md:mt-0">
-          <span className="md:mr-8 mt-2 md:mt-0 cursor-pointer">
-            <Link to="home" spy={true} smooth={true}>
-              HOME
-            </Link>
-          </span>
-          <span className="md:mr-8 mt-2 md:mt-0 cursor-pointer">
-            <Link to="aboutUs" activeClass="active" spy={true} smooth={true}>
-              ABOUT US
-            </Link>
-          </span>
-          <span className="md:mr-8 mt-2 md:mt-0 cursor-pointer">
-            <Link to="services" activeClass="active" spy={true} smooth={true}>
-              SERVICES
-            </Link>
-          </span>
-          <span className="md:mr-16 mt-2 md:mt-0 cursor-pointer">
-            <Link to="schedule" activeClass="active" spy={true} smooth={true}>
-              SCHEDULE
-            </Link>
-          </span>
-          <span className="mt-2 md:mt-0 cursor-pointer">
-            <Link to="contactUs" activeClass="active" spy={true} smooth={true}>
-              CONTACT US
-            </Link>
-          </span>
-          <span className="md:ml-auto mt-2 md:mt-0 cursor-pointer mb-5 md:mb-0">
-            <Link to="services" activeClass="active" spy={true} smooth={true} offset={100}>
-              QUOTE <span className="ml-1">BOOKING</span>
-            </Link>
-          </span>
-            
         </div>
       </div>
 

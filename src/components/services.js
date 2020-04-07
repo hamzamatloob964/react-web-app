@@ -1,11 +1,9 @@
 import React,{useState} from 'react'
 import '../App.css'
-import ItemsCarousel from 'react-items-carousel';
+import ItemCarousel from './shared/Carousel'
 
 export default function Services () {
 
-  const [activeItemIndex, setActiveItemIndex] = useState(0);
-  const chevronWidth = 40; 
   return (
     <div>
       <div className="bg-white flex flex-col items-center mt-3 ">
@@ -13,22 +11,9 @@ export default function Services () {
         <div  className="w-full bg-gray-300 flex flex-col items-center">
           <span className="md:text-4xl text-xl pt-5 pb-5">OUR SERVICES</span>
           <div className="h-48 w-11/12 ">
-            <ItemsCarousel
-              key={2}
-              requestToChangeActive={setActiveItemIndex}
-              activeItemIndex={activeItemIndex}
-              numberOfCards={3}
-              gutter={20}
-              leftChevron={<button>{'<'}</button>}
-              rightChevron={<button>{'>'}</button>}
-              outsideChevron
-              chevronWidth={chevronWidth}
-            >
-              <img className="services-carousel" src={require('../../src/assets/images/pic1.png')} />
-              <img className="services-carousel" src={require('../../src/assets/images/pic1.png')} />
-              <img className="services-carousel" src={require('../../src/assets/images/pic1.png')} />
-              <img className="services-carousel" src={require('../../src/assets/images/pic1.png')} />
-            </ItemsCarousel>
+
+            <ItemCarousel images={['pic2','pic2','pic2','pic2']}/>
+
           </div>
         </div>
 

@@ -1,6 +1,4 @@
 import React from 'react';
-import * as Scroll from 'react-scroll';
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import Header from './header'
 import HomePage from './homePage'
 import AboutUs from './aboutUs'
@@ -9,33 +7,32 @@ import Footer from './footer'
 import Partners from './partners'
 import Schedule from './schedule'
 import Services from './services'
-
+import HamburgerMenu from './HamburgerMenu'
+import MobileViewHeader from './MobileViewHeader'
 import '../App.css'
 
 export default function WebApp () {
-
-  function goToContactUs () {
-    console.log("function called....")
-    scroller.scrollTo('contactUs', {
-      duration: 1500,
-      delay: 100,
-      smooth: true,
-      containerId: 'ContainerElementID',
-      offset: 50, 
-    })
-    //scroll.scrollToBottom()
-  }
 
   return(
     <div >
 
       {/* header section */}
-      <Header/>
+      <div className="header">
+        <Header/>
+      </div>
 
-      <div id="dad" className="main-container" >
+      {/* hamburger-menu */}
+      <div className="hamburger-menu">
+        <HamburgerMenu/>
+      </div>
+
+      <div className="main-container" >
 
         {/* home page carousel section */}
         <div id="home">
+          <div className="MobileViewHeader">
+            <MobileViewHeader/>
+          </div>
           <HomePage/>
         </div>
 
