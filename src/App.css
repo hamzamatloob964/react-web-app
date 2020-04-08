@@ -244,10 +244,18 @@ html {
     .contact-number {
       width: 194px; } }
 
-  .carousel.carousel-slider {
-    height: 350px;
+  .carousel.carousel-slider, .carousel-container, .carousel-item {
+    height: 400px;
+  }
+  @media (max-width: 500px) {
+    .carousel.carousel-slider, .carousel-container, .carousel-item {
+      height: 200px !important;
+    } 
   }
   .carousel .thumbs{
+    display: none;
+  }
+  .carousel .thumbs-wrapper{
     display: none;
   }
   .about-carousel{
