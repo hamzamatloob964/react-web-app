@@ -19,11 +19,8 @@ export default function WebApp () {
 
   window.onscroll = () => {
     var sticky = navBar.current.offsetTop;
-    if (window.pageYOffset > sticky && window.pageYOffset > 122 ) {
+    if (window.pageYOffset > sticky &&  window.pageYOffset > 178) {
       setId('sticky')
-    }
-    else if (window.pageYOffset == 122 && sticky == 0){
-      setId('')
     } else {
       setId('')
     }
@@ -38,7 +35,7 @@ export default function WebApp () {
       </div>
 
       {/* nav-bar */}
-      <div className="nav-bar">
+      <div className="nav-bar" onClick={() => console.log("window offset is :"+window.pageYOffset+" navbar offset is :"+navBar.current.offsetTop)}>
         <div className={id} ref={navBar} >
           <NavBar/>
         </div>
