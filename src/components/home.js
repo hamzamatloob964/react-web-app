@@ -26,6 +26,7 @@ export default function WebApp () {
         <HamburgerMenu/>
       </div>
 
+      {/* main-container */}
       <div className="main-container" >
 
         {/* home page carousel section */}

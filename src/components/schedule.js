@@ -5,14 +5,14 @@ export default function Schedule () {
 
   const data = [
     { id: 1, title: 'Conan the Barbarian', year: '1982' },
-    { id: 1, title: 'Conan the Barbarian', year: '1982' },
-    { id: 1, title: 'Conan the Barbarian', year: '1982' },
-    { id: 1, title: 'Conan the Barbarian', year: '1982' },
-    { id: 1, title: 'Conan the Barbarian', year: '1982' },
-    { id: 1, title: 'Conan the Barbarian', year: '1982' },
-    { id: 1, title: 'Conan the Barbarian', year: '1982' },
-    { id: 1, title: 'Conan the Barbarian', year: '1982' },
-    { id: 1, title: 'Conan the Barbarian', year: '1982' }
+    { id: 2, title: 'Conan the Barbarian', year: '1982' },
+    { id: 3, title: 'Conan the Barbarian', year: '1982' },
+    { id: 4, title: 'Conan the Barbarian', year: '1982' },
+    { id: 5, title: 'Conan the Barbarian', year: '1982' },
+    { id: 6, title: 'Conan the Barbarian', year: '1982' },
+    { id: 7, title: 'Conan the Barbarian', year: '1982' },
+    { id: 8, title: 'Conan the Barbarian', year: '1982' },
+    { id: 9, title: 'Conan the Barbarian', year: '1982' }
   ];
   const columns = [
     {

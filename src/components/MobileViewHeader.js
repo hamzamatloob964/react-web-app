@@ -3,7 +3,7 @@ import '../App.css'
 
 export default function MobileViewHeader () {
   return (
-    <div className="flex flex-col header-main">
+    <div className="flex flex-col header-main mb-5">
 
       <div className="md:h-12 h-24 flex flex-col md:flex-row items-center bg-gray-300">
         <span className="md:ml-20 xs:ml-10 md:text-sm xs:text-xs md:mt-3 mt-5 pl-2 pr-2 md:pr-0 md:pl-0">Opening hours : Saturday to Sunday from 8am to 5pm</span>
