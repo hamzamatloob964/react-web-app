@@ -4,7 +4,7 @@ import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } 
 export default function Header() {
 
   return (
-    <div className="flex flex-col header-main">
+    <div className="flex flex-col relative ">
 
       <div className="md:h-12 h-24 flex flex-col md:flex-row items-center bg-gray-300">
         <span className="md:ml-20 xs:ml-10 md:text-sm xs:text-xs md:mt-3 mt-5 pl-2 pr-2 md:pr-0 md:pl-0">Opening hours : Saturday to Sunday from 8am to 5pm</span>
@@ -55,7 +55,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="md:h-12 w-full bg-indigo-800 flex justify-center">
+      {/* <div className="md:h-12 w-full bg-indigo-800 flex justify-center header-main">
         <div className="md:w-10/12 text-white flex md:flex-row flex-col items-center mt-3 md:mt-0">
           <span className="md:mr-8 mt-2 md:mt-0 cursor-pointer">
             <Link to="home" spy={true} smooth={true}>
@@ -89,7 +89,7 @@ export default function Header() {
           </span>
             
         </div>
-      </div>
+      </div> */}
 
     </div>
   )

@@ -9,7 +9,7 @@ export default function Services () {
       <div className="bg-white flex flex-col items-center mt-3 ">
 
         <div  className="w-full bg-gray-300 flex flex-col items-center">
-          <span className="md:text-4xl text-xl pt-5 pb-5">OUR SERVICES</span>
+          <span className="md:text-4xl text-xl pt-10 pb-5">OUR SERVICES</span>
           <div className="h-48 w-11/12 ">
 
             <ItemCarousel images={['pic2','pic2','pic2','pic2']}/>

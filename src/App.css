@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth !important;
+}
 .App {
   text-align: center;
 }
@@ -255,15 +258,31 @@
   }
   @media (min-width: 768px) {
     .header-main {
-      background: white;
       position: fixed;
       /* position: sticky; */
-      top: 0;
+      top: -20;
       width: 100%;
       z-index: 1000;}
       }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  .nav-bar{
+    display: none;
+  }
+  @media (min-width: 768px) {
+    .nav-bar {
+      display: block;
+      }
+    }
   .active{
     background-color: transparent !important;
+    color: black;
+  }
+  .set-active{
     color: black;
   }
   .hamburger-menu{
