@@ -15,14 +15,22 @@ import '../App.css'
 export default function WebApp () {
 
   var navBar = useRef()
-  const [id, setId] = useState('')
 
   window.onscroll = () => {
-    var sticky = navBar.current.offsetTop;
-    if (window.pageYOffset > sticky &&  window.pageYOffset > 178) {
-      setId('sticky')
+    // var sticky = navBar.current.offsetTop;
+    // if (window.pageYOffset >= sticky )  {
+    //   //console.log("window offset is :"+window.pageYOffset+" navbar offset height and offset top is :"+navBar.current.offsetHeight+" : "+navBar.current.offsetTop)
+    //   navBar.current.classList.add("sticky")
+    // } else {
+    //   navBar.current.classList.remove("sticky");
+    // }
+    if (document.body.scrollTop > 210 || document.documentElement.scrollTop > 210) {
+      //navBar.current.style.top = "0";
+      //navBar.current.style.position = "fixed";
+      navBar.current.classList.add("sticky")
     } else {
-      setId('')
+      //navBar.current.style.top = "-50px";
+      navBar.current.classList.remove("sticky");
     }
   }
 
@@ -35,8 +43,8 @@ export default function WebApp () {
       </div>
 
       {/* nav-bar */}
-      <div className="nav-bar" onClick={() => console.log("window offset is :"+window.pageYOffset+" navbar offset is :"+navBar.current.offsetTop)}>
-        <div className={id} ref={navBar} >
+      <div className="nav-bar" onClick={() => console.log("window offset is :"+window.pageYOffset+" navbar offset height and offset top is :"+navBar.current.offsetHeight+" : "+navBar.current.offsetTop)}>
+        <div className="sticky" ref={navBar} >
           <NavBar/>
         </div>
       </div>
@@ -47,7 +55,7 @@ export default function WebApp () {
       </div>
 
       {/* main-container */}
-      <div  >
+      <div>
 
         {/* home page carousel section */}
         <div id="home">
