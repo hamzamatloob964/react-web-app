@@ -18,24 +18,21 @@ export default function WebApp () {
 
   window.onscroll = () => {
     // var sticky = navBar.current.offsetTop;
-    // if (window.pageYOffset >= sticky )  {
-    //   //console.log("window offset is :"+window.pageYOffset+" navbar offset height and offset top is :"+navBar.current.offsetHeight+" : "+navBar.current.offsetTop)
+    // if (window.pageYOffset >= sticky && window.pageYOffset > 178 )  {
+    //   console.log("window offset is :"+window.pageYOffset+" navbar offset height and offset top is :"+navBar.current.offsetHeight+" : "+navBar.current.offsetTop)
     //   navBar.current.classList.add("sticky")
     // } else {
     //   navBar.current.classList.remove("sticky");
     // }
-    if (document.body.scrollTop > 210 || document.documentElement.scrollTop > 210) {
-      //navBar.current.style.top = "0";
-      //navBar.current.style.position = "fixed";
+    if (document.body.scrollTop > 215 || document.documentElement.scrollTop > 215) {
       navBar.current.classList.add("sticky")
     } else {
-      //navBar.current.style.top = "-50px";
       navBar.current.classList.remove("sticky");
     }
   }
 
   return(
-    <div >
+    <div>
 
       {/* header section */}
       <div className="header">
@@ -44,7 +41,7 @@ export default function WebApp () {
 
       {/* nav-bar */}
       <div className="nav-bar" onClick={() => console.log("window offset is :"+window.pageYOffset+" navbar offset height and offset top is :"+navBar.current.offsetHeight+" : "+navBar.current.offsetTop)}>
-        <div className="sticky" ref={navBar} >
+        <div ref={navBar} >
           <NavBar/>
         </div>
       </div>
