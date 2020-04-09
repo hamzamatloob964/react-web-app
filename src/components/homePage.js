@@ -6,7 +6,7 @@ import { Carousel } from 'react-responsive-carousel';
 export default function HomePage () {
 
   return (
-    <div className="carousel-container" className="w-full mt-0 bg-gray-600">
+    <div className="my-carousel-container" className="w-full mt-0 bg-gray-600">
       <Carousel>
         <div class="relative carousel-item">
           <img style={{objectFit: 'cover', objectPosition: 'center'}} src={require('../../src/assets/images/pic1.jfif')} alt="" />

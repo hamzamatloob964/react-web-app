@@ -244,11 +244,11 @@ html {
     .contact-number {
       width: 194px; } }
 
-  .carousel.carousel-slider, .carousel-container, .carousel-item {
+  .carousel.carousel-slider, .my-carousel-container, .carousel-item {
     height: 400px;
   }
   @media (max-width: 500px) {
-    .carousel.carousel-slider, .carousel-container, .carousel-item {
+    .carousel.carousel-slider, .my-carousel-container, .carousel-item {
       height: 200px !important;
     } 
   }
