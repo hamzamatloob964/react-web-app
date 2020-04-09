@@ -17,18 +17,13 @@ export default function WebApp () {
   var navBar = useRef()
 
   window.onscroll = () => {
-    // var sticky = navBar.current.offsetTop;
-    // if (window.pageYOffset >= sticky && window.pageYOffset > 178 )  {
-    //   console.log("window offset is :"+window.pageYOffset+" navbar offset height and offset top is :"+navBar.current.offsetHeight+" : "+navBar.current.offsetTop)
-    //   navBar.current.classList.add("sticky")
-    // } else {
-    //   navBar.current.classList.remove("sticky");
-    // }
+
     if (document.body.scrollTop > 215 || document.documentElement.scrollTop > 215) {
       navBar.current.classList.add("sticky")
     } else {
       navBar.current.classList.remove("sticky");
     }
+
   }
 
   return(
@@ -40,7 +35,7 @@ export default function WebApp () {
       </div>
 
       {/* nav-bar */}
-      <div className="nav-bar" onClick={() => console.log("window offset is :"+window.pageYOffset+" navbar offset height and offset top is :"+navBar.current.offsetHeight+" : "+navBar.current.offsetTop)}>
+      <div className="nav-bar">
         <div ref={navBar} >
           <NavBar/>
         </div>
