@@ -3,7 +3,7 @@ import React from 'react'
 export default function ContacUs () {
   return (
     <div>
-      <div className="bg-white w-full flex flex-col mt-3">
+      <div className="bg-white w-full flex flex-col mt-3 md:mt-0 pt-0 md:pt-12">
         <div className="w-full md:h-32 bg-gray-300 flex justify-center items-center">
           <span className="md:text-4xl text-xl pt-5 pb-5 md:pt-0 md:pb-0">CONTACT US</span>
         </div>

@@ -6,7 +6,7 @@ export default function Services () {
 
   return (
     <div>
-      <div className="bg-white flex flex-col items-center mt-3 ">
+      <div className="bg-white flex flex-col items-center mt-3 md:mt-0 pt-0 md:pt-12">
 
         <div  className="w-full bg-gray-300 flex flex-col items-center">
           <span className="md:text-4xl text-xl pt-10 pb-5">OUR SERVICES</span>

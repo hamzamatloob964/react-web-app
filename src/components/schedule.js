@@ -60,7 +60,7 @@ export default function Schedule () {
 
   return (
     <div>
-      <div className="bg-white w-full flex flex-col items-center md:mt-40 mt-5">
+      <div className="bg-white w-full flex flex-col items-center md:mt-32 mt-5 pt-0 md:pt-10">
         <div className="w-full md:h-32 bg-gray-300 flex justify-center items-center mt-2">
           <span className="md:text-4xl text-xl pt-5 pb-5 md:py-0 md:pb-0 ">SCHEDULE</span>
         </div>

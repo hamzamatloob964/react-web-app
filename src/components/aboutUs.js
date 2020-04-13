@@ -6,7 +6,7 @@ export default function AboutUs () {
 
   return (
     <div>
-      <div className="w-full bg-black-600 flex flex-col items-center mt-3">
+      <div className="w-full bg-black-600 flex flex-col items-center mt-3 md:mt-0 pt-0 md:pt-12">
         <div className="md:h-32 w-full bg-gray-300 flex justify-center items-center">
           <span className="md:text-4xl text-xl pt-5 pb-5 md:pt-0 md:pb-0">ABOUT US</span>
         </div>

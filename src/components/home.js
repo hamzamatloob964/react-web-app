@@ -26,6 +26,10 @@ export default function WebApp () {
 
   }
 
+  // var shiftWindow = function() { window.scrollBy(0, -50) };
+  // window.addEventListener("hashchange", shiftWindow);
+  // function load() { if (window.location.hash) shiftWindow(); }
+
   return(
     <div>
 
